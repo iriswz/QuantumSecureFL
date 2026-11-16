@@ -1,0 +1,5 @@
+scheme,round,accuracy,balanced_accuracy,precision,recall,specificity,f1,roc_auc,positive_prediction_rate
+single_hospital,1,47.14,58.41,4.19,70.45,46.36,7.92,0.6925,54.18
+plain_federated,1,46.48,61.36,4.51,77.27,45.45,8.52,0.7,55.28
+attacked_plain_federated,1,44.87,25.38,0.28,4.55,46.21,0.53,0.1168,52.2
+secure_federated,1,44.5,57.05,4.0,70.45,43.64,7.57,0.5988,56.82

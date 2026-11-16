@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="324pt" viewBox="0 0 576 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-11T12:54:34.501880</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 576 324 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 132.48 236.52 
+L 558.72 236.52 
+L 558.72 45.36 
+L 132.48 45.36 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p5d13a3835f)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAlAAAAEKCAYAAADdH2tJAAAEzElEQVR4nO3YMRHCQBRF0SwGoiwe0BQF6MIBBQ0GFgu5mUkD59T7m63uvPF6f+YCAMBht+NPAQAQUAAAJ1igAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFACAgAIAuJYFCgAgElAAAJGAAgCIBBQAQCSgAACisW77rEcAwDHPx91X/SALFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAAAEFAHAtCxQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQjXXbZz0CAPhnFigAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAAAiAQUAEAkoAIBIQAEARAIKACASUAAAkYACAIgEFABAJKAAACIBBQAQCSgAgEhAAQBEAgoAIBJQAACRgAIAiAQUAEAkoAAAIgEFABAJKACASEABAEQCCgAgElAAAJGAAgCIBBQAQCSgAACW5gvMJAuNyAEepgAAAABJRU5ErkJggg==" id="imageab7c200cf0" transform="scale(1 -1) translate(0 -191.52)" x="132.48" y="-45" width="426.24" height="191.52"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m6495ed2dc8" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6495ed2dc8" x="175.104" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(165.930563 254.256719)">B1</text>
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(143.438766 272.581563)">(5次确认)</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m6495ed2dc8" x="260.352" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(251.178563 254.256719)">B2</text>
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(228.686766 272.581563)">(4次确认)</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m6495ed2dc8" x="345.6" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(336.426563 254.256719)">B3</text>
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(313.934766 272.581563)">(3次确认)</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m6495ed2dc8" x="430.848" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(421.674563 254.256719)">B4</text>
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(399.182766 272.581563)">(2次确认)</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m6495ed2dc8" x="516.096" y="236.52" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(506.922563 254.256719)">B5</text>
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif" transform="translate(484.430766 272.581563)">(1次确认)</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <path d="M 132.48 236.52 
+L 132.48 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <path d="M 217.728 236.52 
+L 217.728 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <path d="M 302.976 236.52 
+L 302.976 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9">
+      <path d="M 388.224 236.52 
+L 388.224 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_10">
+      <path d="M 473.472 236.52 
+L 473.472 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_11">
+      <path d="M 558.72 236.52 
+L 558.72 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 18px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle" x="345.6" y="295.121562" transform="rotate(-0 345.6 295.121562)">被篡改区块（括号内为到链尾的确认深度）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_12">
+      <defs>
+       <path id="m7d2fc4798d" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7d2fc4798d" x="132.48" y="77.22" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="125.48" y="82.629375" transform="rotate(-0 125.48 82.629375)">仅修改数据</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m7d2fc4798d" x="132.48" y="140.94" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="125.48" y="146.316563" transform="rotate(-0 125.48 146.316563)">重挖被改区块</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m7d2fc4798d" x="132.48" y="204.66" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: end" x="125.48" y="210.062344" transform="rotate(-0 125.48 210.062344)">重挖后续整段</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_15">
+      <path d="M 132.48 45.36 
+L 558.72 45.36 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_16">
+      <path d="M 132.48 109.08 
+L 558.72 109.08 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_17">
+      <path d="M 132.48 172.8 
+L 558.72 172.8 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_18">
+      <path d="M 132.48 236.52 
+L 558.72 236.52 
+" clip-path="url(#p5d13a3835f)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+     </g>
+    </g>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="175.104" y="81.094219" transform="rotate(-0 175.104 81.094219)">✓ 检出</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="260.352" y="81.094219" transform="rotate(-0 260.352 81.094219)">✓ 检出</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="345.6" y="81.094219" transform="rotate(-0 345.6 81.094219)">✓ 检出</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="430.848" y="81.094219" transform="rotate(-0 430.848 81.094219)">✓ 检出</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="516.096" y="81.094219" transform="rotate(-0 516.096 81.094219)">✓ 检出</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="175.104" y="144.814219" transform="rotate(-0 175.104 144.814219)">✓ 检出</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="260.352" y="144.814219" transform="rotate(-0 260.352 144.814219)">✓ 检出</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="345.6" y="144.814219" transform="rotate(-0 345.6 144.814219)">✓ 检出</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="430.848" y="144.814219" transform="rotate(-0 430.848 144.814219)">✓ 检出</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="516.096" y="144.814219" transform="rotate(-0 516.096 144.814219)">— 未检出</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="175.104" y="208.534219" transform="rotate(-0 175.104 208.534219)">— 未检出</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="260.352" y="208.534219" transform="rotate(-0 260.352 208.534219)">— 未检出</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="345.6" y="208.534219" transform="rotate(-0 345.6 208.534219)">— 未检出</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="430.848" y="208.534219" transform="rotate(-0 430.848 208.534219)">— 未检出</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="516.096" y="208.534219" transform="rotate(-0 516.096 208.534219)">— 未检出</text>
+   </g>
+  </g>
+  <g id="legend_1">
+   <g id="patch_3">
+    <path d="M 242.82 33.956719 
+L 263.82 33.956719 
+L 263.82 23.456719 
+L 242.82 23.456719 
+z
+" style="fill: #0f4d92"/>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="275.82" y="33.956719" transform="rotate(-0 275.82 33.956719)">检出</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 335.82 33.956719 
+L 356.82 33.956719 
+L 356.82 23.456719 
+L 335.82 23.456719 
+z
+" style="fill: #e9edf2; stroke: #c9d1da; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 15px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start" x="368.82" y="33.956719" transform="rotate(-0 368.82 33.956719)">未检出</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5d13a3835f">
+   <rect x="132.48" y="45.36" width="426.24" height="191.16"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,106 @@
+{
+  "scene": "spam",
+  "dataset": "Spambase",
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "protocol": {
+    "rounds": 20,
+    "batch_size_per_client": 256,
+    "learning_rate": 0.08,
+    "local_epsilon_per_round": 0.5,
+    "mpo_bond_dim": 16,
+    "malicious_client": 4,
+    "attack_gradient_factor": -25.0,
+    "seed": 2030
+  },
+  "per_seed": [
+    {
+      "seed": 2026,
+      "clean_plain_balanced_accuracy": 86.21,
+      "attacked_plain_balanced_accuracy": 20.54,
+      "secure_balanced_accuracy": 85.26,
+      "secure_gain_over_attacked_points": 64.72,
+      "secure_gap_from_clean_plain_points": -0.95,
+      "qdp_gradient_reconstruction_nrmse": 0.86731172,
+      "mpo_payload_saving_pct": 39.27,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2027,
+      "clean_plain_balanced_accuracy": 88.72,
+      "attacked_plain_balanced_accuracy": 33.84,
+      "secure_balanced_accuracy": 87.81,
+      "secure_gain_over_attacked_points": 53.97,
+      "secure_gap_from_clean_plain_points": -0.91,
+      "qdp_gradient_reconstruction_nrmse": 0.37514516,
+      "mpo_payload_saving_pct": 39.27,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2028,
+      "clean_plain_balanced_accuracy": 83.81,
+      "attacked_plain_balanced_accuracy": 19.12,
+      "secure_balanced_accuracy": 82.18,
+      "secure_gain_over_attacked_points": 63.06,
+      "secure_gap_from_clean_plain_points": -1.63,
+      "qdp_gradient_reconstruction_nrmse": 0.85371545,
+      "mpo_payload_saving_pct": 39.27,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2029,
+      "clean_plain_balanced_accuracy": 85.21,
+      "attacked_plain_balanced_accuracy": 16.71,
+      "secure_balanced_accuracy": 82.54,
+      "secure_gain_over_attacked_points": 65.83,
+      "secure_gap_from_clean_plain_points": -2.67,
+      "qdp_gradient_reconstruction_nrmse": 0.35080393,
+      "mpo_payload_saving_pct": 39.27,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2030,
+      "clean_plain_balanced_accuracy": 87.27,
+      "attacked_plain_balanced_accuracy": 11.04,
+      "secure_balanced_accuracy": 86.1,
+      "secure_gain_over_attacked_points": 75.06,
+      "secure_gap_from_clean_plain_points": -1.17,
+      "qdp_gradient_reconstruction_nrmse": 0.87061162,
+      "mpo_payload_saving_pct": 39.27,
+      "malicious_round_detection_rate_pct": 100.0
+    }
+  ],
+  "aggregate_mean": {
+    "clean_plain_balanced_accuracy": 86.244,
+    "attacked_plain_balanced_accuracy": 20.25,
+    "secure_balanced_accuracy": 84.778,
+    "secure_gain_over_attacked_points": 64.528,
+    "secure_gap_from_clean_plain_points": -1.466,
+    "qdp_gradient_reconstruction_nrmse": 0.664,
+    "mpo_payload_saving_pct": 39.27,
+    "malicious_round_detection_rate_pct": 100.0
+  },
+  "aggregate_sample_std": {
+    "clean_plain_balanced_accuracy": 1.883,
+    "attacked_plain_balanced_accuracy": 8.417,
+    "secure_balanced_accuracy": 2.394,
+    "secure_gain_over_attacked_points": 7.521,
+    "secure_gap_from_clean_plain_points": 0.731,
+    "qdp_gradient_reconstruction_nrmse": 0.275,
+    "mpo_payload_saving_pct": 0.0,
+    "malicious_round_detection_rate_pct": 0.0
+  },
+  "all_seeds": {
+    "eavesdropping_detected": true,
+    "ciphertext_tampering_rejected": true,
+    "malicious_client_detected_every_round": true,
+    "blockchain_valid": true,
+    "all_rounds_recorded": true
+  },
+  "scope_warning": "Five organizations and all quantum-related components are software simulations; the gradient inversion probe is empirical, not a formal DP audit."
+}

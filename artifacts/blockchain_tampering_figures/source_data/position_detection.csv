@@ -1,0 +1,16 @@
+﻿tampered_block,confirmations_to_tip,strategy_id,strategy,detected_by_local_validation,validation_message
+1,5,data_edit_only,仅修改数据,True,区块 1 PoW 验证失败
+1,5,remine_one_block,重挖被改区块,True,区块 2 与前块哈希链断裂 (可能被篡改)
+1,5,remine_suffix,重挖后续整段,False,区块链完整有效
+2,4,data_edit_only,仅修改数据,True,区块 2 PoW 验证失败
+2,4,remine_one_block,重挖被改区块,True,区块 3 与前块哈希链断裂 (可能被篡改)
+2,4,remine_suffix,重挖后续整段,False,区块链完整有效
+3,3,data_edit_only,仅修改数据,True,区块 3 PoW 验证失败
+3,3,remine_one_block,重挖被改区块,True,区块 4 与前块哈希链断裂 (可能被篡改)
+3,3,remine_suffix,重挖后续整段,False,区块链完整有效
+4,2,data_edit_only,仅修改数据,True,区块 4 PoW 验证失败
+4,2,remine_one_block,重挖被改区块,True,区块 5 与前块哈希链断裂 (可能被篡改)
+4,2,remine_suffix,重挖后续整段,False,区块链完整有效
+5,1,data_edit_only,仅修改数据,True,区块 5 PoW 验证失败
+5,1,remine_one_block,重挖被改区块,False,区块链完整有效
+5,1,remine_suffix,重挖后续整段,False,区块链完整有效

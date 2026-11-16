@@ -1,0 +1,55 @@
+{
+  "figure_contract": {
+    "core_conclusion": "本地 PoW+哈希链校验可以检出直接篡改和不完整重挖；完整重挖后续链段时，攻击风险由攻击者算力与确认深度决定。",
+    "archetype": "quantitative grid with hash-link evidence",
+    "target_output": "standalone report/论文附件",
+    "backend": "Python/matplotlib",
+    "final_size": "183 mm composite; 150-183 mm standalone panels",
+    "panel_map": {
+      "a": "算力占比与后续重挖成功率",
+      "b": "不同篡改位置和攻击策略的本地检出矩阵",
+      "c": "真实哈希摘要展示链接断裂证据"
+    },
+    "hero_evidence": "Monte Carlo scan with theoretical curve and Wilson 95% CI",
+    "validation_evidence": "project Blockchain.validate_chain() on 5 non-genesis blocks"
+  },
+  "statistics": {
+    "seed": 20260811,
+    "trials_per_hashrate": 10000,
+    "tamper_position_sampling": "uniform across 5 non-genesis blocks",
+    "center": "Monte Carlo proportion",
+    "interval": "two-sided Wilson 95% confidence interval",
+    "catchup_model": "P=(q/(1-q))^z for q<0.5; P=1 for q>=0.5",
+    "hypothesis_test": "none"
+  },
+  "limitations": [
+    "这是攻击者追赶概率仿真，不是真实公链测量。",
+    "本地链结构校验无法单独识别已完整重挖的后续链段，还需要外部共识、签名或检查点。",
+    "确认深度 z 按篡改位置到链尾的区块数计算。"
+  ],
+  "hash_link_evidence": {
+    "tampered_block": 3,
+    "next_block": 4,
+    "old_hash": "00c796fcc2879a61f2b8102258154e7571d037f59a65a970b6991f65642321a9",
+    "new_hash_after_tamper_and_remine": "008aed4a596db8d3f8549e64d41d8acc5d9f3693b406426c4c423e3413ae908d",
+    "next_block_stored_previous_hash": "00c796fcc2879a61f2b8102258154e7571d037f59a65a970b6991f65642321a9",
+    "link_matched_before": true,
+    "link_matched_after": false,
+    "detected": true,
+    "validation_message": "区块 4 与前块哈希链断裂 (可能被篡改)",
+    "chain_hashes_before": [
+      "00af1acd013704b3ae5579eb4e34cc01f732c0e85e51ed50453f1c15b62dfa33",
+      "00986882b0aa7bb4716d64d34608b9585b9994941d7b9fdc96c289b4044f8c2b",
+      "00c796fcc2879a61f2b8102258154e7571d037f59a65a970b6991f65642321a9",
+      "0036237616e72da1bd9b63712e75463a3f9dd49b9b4ba2051800e2bd8d9ffcce",
+      "00a5508b62a680b7704e07749d96333921b9fdadf60e83161ac839394a9a7c63"
+    ],
+    "chain_hashes_after": [
+      "00af1acd013704b3ae5579eb4e34cc01f732c0e85e51ed50453f1c15b62dfa33",
+      "00986882b0aa7bb4716d64d34608b9585b9994941d7b9fdc96c289b4044f8c2b",
+      "008aed4a596db8d3f8549e64d41d8acc5d9f3693b406426c4c423e3413ae908d",
+      "0036237616e72da1bd9b63712e75463a3f9dd49b9b4ba2051800e2bd8d9ffcce",
+      "00a5508b62a680b7704e07749d96333921b9fdadf60e83161ac839394a9a7c63"
+    ]
+  }
+}

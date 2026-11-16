@@ -1,0 +1,4 @@
+﻿strategy_id,detected_positions,total_positions,detection_rate
+data_edit_only,5,5,1.0
+remine_one_block,4,5,0.8
+remine_suffix,0,5,0.0

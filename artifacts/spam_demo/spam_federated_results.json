@@ -1,0 +1,1878 @@
+{
+  "generated_at": "2026-08-06 20:08:30 +0800",
+  "elapsed_seconds": 0.829,
+  "scene": "spam",
+  "scene_title": "跨邮件网关垃圾邮件协同识别",
+  "experiment_scope": "real public records; five organizations and all quantum-related modules are software simulations",
+  "config": {
+    "rounds": 20,
+    "batch_size_per_client": 256,
+    "learning_rate": 0.08,
+    "local_epsilon_per_round": 0.5,
+    "mpo_bond_dim": 16,
+    "malicious_client": 4,
+    "attack_gradient_factor": -25.0,
+    "seed": 2026
+  },
+  "dataset": {
+    "scenario": "spam",
+    "dataset_name": "Spambase",
+    "dataset_page": "https://archive.ics.uci.edu/dataset/94/spambase",
+    "dataset_doi": "https://doi.org/10.24432/C53G6X",
+    "license": "CC BY 4.0",
+    "archive_size_note": "about 128 KB ZIP; extracted data about 703 KB",
+    "raw_records": 4601,
+    "feature_count": 57,
+    "positive_records": 1813,
+    "raw_positive_rate_pct": 39.4,
+    "train_records": 3680,
+    "test_records": 921,
+    "row_leakage_count": 0,
+    "target": "spam email (1=spam, 0=non-spam)",
+    "client_partition": "stratified row-level simulated five organizations with predeclared non-IID positive-rate shift; source organization ID is unavailable",
+    "normalization": "federated count/sum/sum-of-squares over training clients only",
+    "data_sha256": "b1ef93de71f97714d3d7d4f58fc9f718da7bbc8ac8a150eff2778616a8097b12",
+    "seed": 2026,
+    "client_summaries": [
+      {
+        "hospital_id": 0,
+        "name": "邮件网关A",
+        "records": 674,
+        "positive_records": 406,
+        "positive_rate_pct": 60.24
+      },
+      {
+        "hospital_id": 1,
+        "name": "邮件网关B",
+        "records": 705,
+        "positive_records": 348,
+        "positive_rate_pct": 49.36
+      },
+      {
+        "hospital_id": 2,
+        "name": "邮件网关C",
+        "records": 736,
+        "positive_records": 290,
+        "positive_rate_pct": 39.4
+      },
+      {
+        "hospital_id": 3,
+        "name": "邮件网关D",
+        "records": 767,
+        "positive_records": 232,
+        "positive_rate_pct": 30.25
+      },
+      {
+        "hospital_id": 4,
+        "name": "邮件网关E",
+        "records": 798,
+        "positive_records": 174,
+        "positive_rate_pct": 21.8
+      }
+    ]
+  },
+  "gradient_leakage_probe": {
+    "attack": "analytic single-record first-layer gradient inversion",
+    "scope": "empirical leakage probe, not a formal DP audit",
+    "plain_gradient_reconstruction_nrmse": 0.0,
+    "qdp_gradient_reconstruction_nrmse": 0.86731172,
+    "reconstruction_nrmse_increase": 0.86731172,
+    "plain_gradient_reconstruction_succeeded": true,
+    "qdp_gradient_reconstruction_blocked": true,
+    "clean_to_protected_gradient_cosine": 0.649892,
+    "qdp_noise_scale": 0.022197
+  },
+  "four_layer_advantages": {
+    "secure_accuracy_gain_over_attacked_points": 62.32,
+    "secure_balanced_accuracy_gain_over_attacked_points": 64.72,
+    "secure_balanced_accuracy_gap_from_clean_plain_points": -0.95,
+    "layer1_eavesdropping_detected": true,
+    "layer1_ciphertext_tampering_rejected": true,
+    "layer2_plain_gradient_reconstruction_nrmse": 0.0,
+    "layer2_qdp_gradient_reconstruction_nrmse": 0.86731172,
+    "layer2_qdp_gradient_reconstruction_blocked": true,
+    "layer3_mpo_payload_saving_pct": 39.27,
+    "layer3_malicious_round_detection_rate_pct": 100.0,
+    "layer4_chain_valid": true,
+    "layer4_all_rounds_recorded": true
+  },
+  "results": [
+    {
+      "name": "single_hospital",
+      "description": "仅医院A本地训练（不共享原始数据）",
+      "metrics": {
+        "round": 20,
+        "accuracy": 86.97,
+        "balanced_accuracy": 86.31,
+        "precision": 83.66,
+        "recall": 83.2,
+        "specificity": 89.43,
+        "f1": 83.43,
+        "roc_auc": 0.9259,
+        "positive_prediction_rate": 39.2,
+        "confusion_matrix": {
+          "tn": 499,
+          "fp": 59,
+          "fn": 61,
+          "tp": 302
+        },
+        "n_samples": 921
+      },
+      "history": [
+        {
+          "round": 1,
+          "accuracy": 52.33,
+          "balanced_accuracy": 45.45,
+          "precision": 27.65,
+          "recall": 12.95,
+          "specificity": 77.96,
+          "f1": 17.64,
+          "roc_auc": 0.3878,
+          "positive_prediction_rate": 18.46,
+          "confusion_matrix": {
+            "tn": 435,
+            "fp": 123,
+            "fn": 316,
+            "tp": 47
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 2,
+          "accuracy": 55.59,
+          "balanced_accuracy": 49.92,
+          "precision": 39.25,
+          "recall": 23.14,
+          "specificity": 76.7,
+          "f1": 29.12,
+          "roc_auc": 0.5007,
+          "positive_prediction_rate": 23.24,
+          "confusion_matrix": {
+            "tn": 428,
+            "fp": 130,
+            "fn": 279,
+            "tp": 84
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 3,
+          "accuracy": 60.59,
+          "balanced_accuracy": 56.69,
+          "precision": 50.0,
+          "recall": 38.29,
+          "specificity": 75.09,
+          "f1": 43.37,
+          "roc_auc": 0.5975,
+          "positive_prediction_rate": 30.18,
+          "confusion_matrix": {
+            "tn": 419,
+            "fp": 139,
+            "fn": 224,
+            "tp": 139
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 4,
+          "accuracy": 64.71,
+          "balanced_accuracy": 61.88,
+          "precision": 56.05,
+          "recall": 48.48,
+          "specificity": 75.27,
+          "f1": 51.99,
+          "roc_auc": 0.6742,
+          "positive_prediction_rate": 34.09,
+          "confusion_matrix": {
+            "tn": 420,
+            "fp": 138,
+            "fn": 187,
+            "tp": 176
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 5,
+          "accuracy": 67.86,
+          "balanced_accuracy": 65.82,
+          "precision": 59.82,
+          "recall": 56.2,
+          "specificity": 75.45,
+          "f1": 57.95,
+          "roc_auc": 0.7322,
+          "positive_prediction_rate": 37.02,
+          "confusion_matrix": {
+            "tn": 421,
+            "fp": 137,
+            "fn": 159,
+            "tp": 204
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 6,
+          "accuracy": 70.58,
+          "balanced_accuracy": 69.27,
+          "precision": 62.57,
+          "recall": 63.09,
+          "specificity": 75.45,
+          "f1": 62.83,
+          "roc_auc": 0.7774,
+          "positive_prediction_rate": 39.74,
+          "confusion_matrix": {
+            "tn": 421,
+            "fp": 137,
+            "fn": 134,
+            "tp": 229
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 7,
+          "accuracy": 74.38,
+          "balanced_accuracy": 73.37,
+          "precision": 67.12,
+          "recall": 68.6,
+          "specificity": 78.14,
+          "f1": 67.85,
+          "roc_auc": 0.816,
+          "positive_prediction_rate": 40.28,
+          "confusion_matrix": {
+            "tn": 436,
+            "fp": 122,
+            "fn": 114,
+            "tp": 249
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 8,
+          "accuracy": 76.76,
+          "balanced_accuracy": 75.96,
+          "precision": 69.87,
+          "recall": 72.18,
+          "specificity": 79.75,
+          "f1": 71.0,
+          "roc_auc": 0.8421,
+          "positive_prediction_rate": 40.72,
+          "confusion_matrix": {
+            "tn": 445,
+            "fp": 113,
+            "fn": 101,
+            "tp": 262
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 9,
+          "accuracy": 77.85,
+          "balanced_accuracy": 77.24,
+          "precision": 70.87,
+          "recall": 74.38,
+          "specificity": 80.11,
+          "f1": 72.58,
+          "roc_auc": 0.8571,
+          "positive_prediction_rate": 41.37,
+          "confusion_matrix": {
+            "tn": 447,
+            "fp": 111,
+            "fn": 93,
+            "tp": 270
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 10,
+          "accuracy": 79.8,
+          "balanced_accuracy": 79.24,
+          "precision": 73.35,
+          "recall": 76.58,
+          "specificity": 81.9,
+          "f1": 74.93,
+          "roc_auc": 0.8736,
+          "positive_prediction_rate": 41.15,
+          "confusion_matrix": {
+            "tn": 457,
+            "fp": 101,
+            "fn": 85,
+            "tp": 278
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 11,
+          "accuracy": 81.43,
+          "balanced_accuracy": 80.78,
+          "precision": 75.81,
+          "recall": 77.69,
+          "specificity": 83.87,
+          "f1": 76.73,
+          "roc_auc": 0.8843,
+          "positive_prediction_rate": 40.39,
+          "confusion_matrix": {
+            "tn": 468,
+            "fp": 90,
+            "fn": 81,
+            "tp": 282
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 12,
+          "accuracy": 82.84,
+          "balanced_accuracy": 82.23,
+          "precision": 77.63,
+          "recall": 79.34,
+          "specificity": 85.13,
+          "f1": 78.47,
+          "roc_auc": 0.8932,
+          "positive_prediction_rate": 40.28,
+          "confusion_matrix": {
+            "tn": 475,
+            "fp": 83,
+            "fn": 75,
+            "tp": 288
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 13,
+          "accuracy": 83.5,
+          "balanced_accuracy": 83.15,
+          "precision": 77.69,
+          "recall": 81.54,
+          "specificity": 84.77,
+          "f1": 79.57,
+          "roc_auc": 0.9007,
+          "positive_prediction_rate": 41.37,
+          "confusion_matrix": {
+            "tn": 473,
+            "fp": 85,
+            "fn": 67,
+            "tp": 296
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 14,
+          "accuracy": 84.36,
+          "balanced_accuracy": 83.97,
+          "precision": 79.05,
+          "recall": 82.09,
+          "specificity": 85.84,
+          "f1": 80.54,
+          "roc_auc": 0.9068,
+          "positive_prediction_rate": 40.93,
+          "confusion_matrix": {
+            "tn": 479,
+            "fp": 79,
+            "fn": 65,
+            "tp": 298
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 15,
+          "accuracy": 84.91,
+          "balanced_accuracy": 84.37,
+          "precision": 80.27,
+          "recall": 81.82,
+          "specificity": 86.92,
+          "f1": 81.04,
+          "roc_auc": 0.912,
+          "positive_prediction_rate": 40.17,
+          "confusion_matrix": {
+            "tn": 485,
+            "fp": 73,
+            "fn": 66,
+            "tp": 297
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 16,
+          "accuracy": 85.23,
+          "balanced_accuracy": 84.68,
+          "precision": 80.76,
+          "recall": 82.09,
+          "specificity": 87.28,
+          "f1": 81.42,
+          "roc_auc": 0.9155,
+          "positive_prediction_rate": 40.07,
+          "confusion_matrix": {
+            "tn": 487,
+            "fp": 71,
+            "fn": 65,
+            "tp": 298
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 17,
+          "accuracy": 85.78,
+          "balanced_accuracy": 85.13,
+          "precision": 81.87,
+          "recall": 82.09,
+          "specificity": 88.17,
+          "f1": 81.98,
+          "roc_auc": 0.9185,
+          "positive_prediction_rate": 39.52,
+          "confusion_matrix": {
+            "tn": 492,
+            "fp": 66,
+            "fn": 65,
+            "tp": 298
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 18,
+          "accuracy": 86.1,
+          "balanced_accuracy": 85.4,
+          "precision": 82.55,
+          "recall": 82.09,
+          "specificity": 88.71,
+          "f1": 82.32,
+          "roc_auc": 0.9218,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 495,
+            "fp": 63,
+            "fn": 65,
+            "tp": 298
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 19,
+          "accuracy": 86.75,
+          "balanced_accuracy": 86.08,
+          "precision": 83.38,
+          "recall": 82.92,
+          "specificity": 89.25,
+          "f1": 83.15,
+          "roc_auc": 0.9241,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 498,
+            "fp": 60,
+            "fn": 62,
+            "tp": 301
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 20,
+          "accuracy": 86.97,
+          "balanced_accuracy": 86.31,
+          "precision": 83.66,
+          "recall": 83.2,
+          "specificity": 89.43,
+          "f1": 83.43,
+          "roc_auc": 0.9259,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 499,
+            "fp": 59,
+            "fn": 61,
+            "tp": 302
+          },
+          "n_samples": 921
+        }
+      ],
+      "runtime_seconds": 0.017
+    },
+    {
+      "name": "plain_federated",
+      "description": "5家医院 FedAvg（无四层安全机制的效用上界）",
+      "metrics": {
+        "round": 20,
+        "accuracy": 86.97,
+        "balanced_accuracy": 86.21,
+        "precision": 84.03,
+        "recall": 82.64,
+        "specificity": 89.78,
+        "f1": 83.33,
+        "roc_auc": 0.9284,
+        "positive_prediction_rate": 38.76,
+        "confusion_matrix": {
+          "tn": 501,
+          "fp": 57,
+          "fn": 63,
+          "tp": 300
+        },
+        "n_samples": 921
+      },
+      "history": [
+        {
+          "round": 1,
+          "accuracy": 52.44,
+          "balanced_accuracy": 45.93,
+          "precision": 29.73,
+          "recall": 15.15,
+          "specificity": 76.7,
+          "f1": 20.07,
+          "roc_auc": 0.4007,
+          "positive_prediction_rate": 20.09,
+          "confusion_matrix": {
+            "tn": 428,
+            "fp": 130,
+            "fn": 308,
+            "tp": 55
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 2,
+          "accuracy": 56.03,
+          "balanced_accuracy": 50.95,
+          "precision": 41.18,
+          "recall": 27.0,
+          "specificity": 74.91,
+          "f1": 32.61,
+          "roc_auc": 0.5174,
+          "positive_prediction_rate": 25.84,
+          "confusion_matrix": {
+            "tn": 418,
+            "fp": 140,
+            "fn": 265,
+            "tp": 98
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 3,
+          "accuracy": 60.37,
+          "balanced_accuracy": 56.56,
+          "precision": 49.65,
+          "recall": 38.57,
+          "specificity": 74.55,
+          "f1": 43.41,
+          "roc_auc": 0.6124,
+          "positive_prediction_rate": 30.62,
+          "confusion_matrix": {
+            "tn": 416,
+            "fp": 142,
+            "fn": 223,
+            "tp": 140
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 4,
+          "accuracy": 65.04,
+          "balanced_accuracy": 62.29,
+          "precision": 56.47,
+          "recall": 49.31,
+          "specificity": 75.27,
+          "f1": 52.65,
+          "roc_auc": 0.6878,
+          "positive_prediction_rate": 34.42,
+          "confusion_matrix": {
+            "tn": 420,
+            "fp": 138,
+            "fn": 184,
+            "tp": 179
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 5,
+          "accuracy": 68.84,
+          "balanced_accuracy": 66.82,
+          "precision": 61.18,
+          "recall": 57.3,
+          "specificity": 76.34,
+          "f1": 59.17,
+          "roc_auc": 0.7476,
+          "positive_prediction_rate": 36.92,
+          "confusion_matrix": {
+            "tn": 426,
+            "fp": 132,
+            "fn": 155,
+            "tp": 208
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 6,
+          "accuracy": 73.51,
+          "balanced_accuracy": 72.02,
+          "precision": 66.86,
+          "recall": 65.01,
+          "specificity": 79.03,
+          "f1": 65.92,
+          "roc_auc": 0.7918,
+          "positive_prediction_rate": 38.33,
+          "confusion_matrix": {
+            "tn": 441,
+            "fp": 117,
+            "fn": 127,
+            "tp": 236
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 7,
+          "accuracy": 75.68,
+          "balanced_accuracy": 74.39,
+          "precision": 69.47,
+          "recall": 68.32,
+          "specificity": 80.47,
+          "f1": 68.89,
+          "roc_auc": 0.8241,
+          "positive_prediction_rate": 38.76,
+          "confusion_matrix": {
+            "tn": 449,
+            "fp": 109,
+            "fn": 115,
+            "tp": 248
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 8,
+          "accuracy": 78.07,
+          "balanced_accuracy": 76.94,
+          "precision": 72.42,
+          "recall": 71.63,
+          "specificity": 82.26,
+          "f1": 72.02,
+          "roc_auc": 0.8491,
+          "positive_prediction_rate": 38.98,
+          "confusion_matrix": {
+            "tn": 459,
+            "fp": 99,
+            "fn": 103,
+            "tp": 260
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 9,
+          "accuracy": 80.02,
+          "balanced_accuracy": 79.04,
+          "precision": 74.79,
+          "recall": 74.38,
+          "specificity": 83.69,
+          "f1": 74.59,
+          "roc_auc": 0.868,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 467,
+            "fp": 91,
+            "fn": 93,
+            "tp": 270
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 10,
+          "accuracy": 81.11,
+          "balanced_accuracy": 80.17,
+          "precision": 76.18,
+          "recall": 75.76,
+          "specificity": 84.59,
+          "f1": 75.97,
+          "roc_auc": 0.8815,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 472,
+            "fp": 86,
+            "fn": 88,
+            "tp": 275
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 11,
+          "accuracy": 82.19,
+          "balanced_accuracy": 81.5,
+          "precision": 76.96,
+          "recall": 78.24,
+          "specificity": 84.77,
+          "f1": 77.6,
+          "roc_auc": 0.8913,
+          "positive_prediction_rate": 40.07,
+          "confusion_matrix": {
+            "tn": 473,
+            "fp": 85,
+            "fn": 79,
+            "tp": 284
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 12,
+          "accuracy": 83.5,
+          "balanced_accuracy": 82.82,
+          "precision": 78.75,
+          "recall": 79.61,
+          "specificity": 86.02,
+          "f1": 79.18,
+          "roc_auc": 0.899,
+          "positive_prediction_rate": 39.85,
+          "confusion_matrix": {
+            "tn": 480,
+            "fp": 78,
+            "fn": 74,
+            "tp": 289
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 13,
+          "accuracy": 84.47,
+          "balanced_accuracy": 83.77,
+          "precision": 80.22,
+          "recall": 80.44,
+          "specificity": 87.1,
+          "f1": 80.33,
+          "roc_auc": 0.9056,
+          "positive_prediction_rate": 39.52,
+          "confusion_matrix": {
+            "tn": 486,
+            "fp": 72,
+            "fn": 71,
+            "tp": 292
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 14,
+          "accuracy": 85.02,
+          "balanced_accuracy": 84.26,
+          "precision": 81.16,
+          "recall": 80.72,
+          "specificity": 87.81,
+          "f1": 80.94,
+          "roc_auc": 0.9108,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 490,
+            "fp": 68,
+            "fn": 70,
+            "tp": 293
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 15,
+          "accuracy": 85.99,
+          "balanced_accuracy": 85.22,
+          "precision": 82.68,
+          "recall": 81.54,
+          "specificity": 88.89,
+          "f1": 82.11,
+          "roc_auc": 0.9151,
+          "positive_prediction_rate": 38.87,
+          "confusion_matrix": {
+            "tn": 496,
+            "fp": 62,
+            "fn": 67,
+            "tp": 296
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 16,
+          "accuracy": 85.99,
+          "balanced_accuracy": 85.22,
+          "precision": 82.68,
+          "recall": 81.54,
+          "specificity": 88.89,
+          "f1": 82.11,
+          "roc_auc": 0.9188,
+          "positive_prediction_rate": 38.87,
+          "confusion_matrix": {
+            "tn": 496,
+            "fp": 62,
+            "fn": 67,
+            "tp": 296
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 17,
+          "accuracy": 86.64,
+          "balanced_accuracy": 85.9,
+          "precision": 83.52,
+          "recall": 82.37,
+          "specificity": 89.43,
+          "f1": 82.94,
+          "roc_auc": 0.9217,
+          "positive_prediction_rate": 38.87,
+          "confusion_matrix": {
+            "tn": 499,
+            "fp": 59,
+            "fn": 64,
+            "tp": 299
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 18,
+          "accuracy": 86.86,
+          "balanced_accuracy": 86.08,
+          "precision": 83.99,
+          "recall": 82.37,
+          "specificity": 89.78,
+          "f1": 83.17,
+          "roc_auc": 0.9242,
+          "positive_prediction_rate": 38.65,
+          "confusion_matrix": {
+            "tn": 501,
+            "fp": 57,
+            "fn": 64,
+            "tp": 299
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 19,
+          "accuracy": 86.86,
+          "balanced_accuracy": 86.13,
+          "precision": 83.8,
+          "recall": 82.64,
+          "specificity": 89.61,
+          "f1": 83.22,
+          "roc_auc": 0.9264,
+          "positive_prediction_rate": 38.87,
+          "confusion_matrix": {
+            "tn": 500,
+            "fp": 58,
+            "fn": 63,
+            "tp": 300
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 20,
+          "accuracy": 86.97,
+          "balanced_accuracy": 86.21,
+          "precision": 84.03,
+          "recall": 82.64,
+          "specificity": 89.78,
+          "f1": 83.33,
+          "roc_auc": 0.9284,
+          "positive_prediction_rate": 38.76,
+          "confusion_matrix": {
+            "tn": 501,
+            "fp": 57,
+            "fn": 63,
+            "tp": 300
+          },
+          "n_samples": 921
+        }
+      ],
+      "runtime_seconds": 0.043
+    },
+    {
+      "name": "attacked_plain_federated",
+      "description": "普通 FedAvg + 单个客户端反向放大梯度（无共识过滤）",
+      "metrics": {
+        "round": 20,
+        "accuracy": 23.78,
+        "balanced_accuracy": 20.54,
+        "precision": 5.04,
+        "recall": 5.23,
+        "specificity": 35.84,
+        "f1": 5.14,
+        "roc_auc": 0.2054,
+        "positive_prediction_rate": 40.93,
+        "confusion_matrix": {
+          "tn": 200,
+          "fp": 358,
+          "fn": 344,
+          "tp": 19
+        },
+        "n_samples": 921
+      },
+      "history": [
+        {
+          "round": 1,
+          "accuracy": 48.64,
+          "balanced_accuracy": 40.29,
+          "precision": 2.59,
+          "recall": 0.83,
+          "specificity": 79.75,
+          "f1": 1.25,
+          "roc_auc": 0.1269,
+          "positive_prediction_rate": 12.6,
+          "confusion_matrix": {
+            "tn": 445,
+            "fp": 113,
+            "fn": 360,
+            "tp": 3
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 2,
+          "accuracy": 50.27,
+          "balanced_accuracy": 41.58,
+          "precision": 2.02,
+          "recall": 0.55,
+          "specificity": 82.62,
+          "f1": 0.87,
+          "roc_auc": 0.0951,
+          "positive_prediction_rate": 10.75,
+          "confusion_matrix": {
+            "tn": 461,
+            "fp": 97,
+            "fn": 361,
+            "tp": 2
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 3,
+          "accuracy": 49.19,
+          "balanced_accuracy": 40.74,
+          "precision": 2.7,
+          "recall": 0.83,
+          "specificity": 80.65,
+          "f1": 1.27,
+          "roc_auc": 0.0821,
+          "positive_prediction_rate": 12.05,
+          "confusion_matrix": {
+            "tn": 450,
+            "fp": 108,
+            "fn": 360,
+            "tp": 3
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 4,
+          "accuracy": 47.56,
+          "balanced_accuracy": 39.39,
+          "precision": 2.38,
+          "recall": 0.83,
+          "specificity": 77.96,
+          "f1": 1.23,
+          "roc_auc": 0.0748,
+          "positive_prediction_rate": 13.68,
+          "confusion_matrix": {
+            "tn": 435,
+            "fp": 123,
+            "fn": 360,
+            "tp": 3
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 5,
+          "accuracy": 46.91,
+          "balanced_accuracy": 38.85,
+          "precision": 2.27,
+          "recall": 0.83,
+          "specificity": 76.88,
+          "f1": 1.21,
+          "roc_auc": 0.0719,
+          "positive_prediction_rate": 14.33,
+          "confusion_matrix": {
+            "tn": 429,
+            "fp": 129,
+            "fn": 360,
+            "tp": 3
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 6,
+          "accuracy": 43.87,
+          "balanced_accuracy": 36.35,
+          "precision": 1.88,
+          "recall": 0.83,
+          "specificity": 71.86,
+          "f1": 1.15,
+          "roc_auc": 0.0698,
+          "positive_prediction_rate": 17.37,
+          "confusion_matrix": {
+            "tn": 401,
+            "fp": 157,
+            "fn": 360,
+            "tp": 3
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 7,
+          "accuracy": 42.13,
+          "balanced_accuracy": 34.96,
+          "precision": 2.25,
+          "recall": 1.1,
+          "specificity": 68.82,
+          "f1": 1.48,
+          "roc_auc": 0.0669,
+          "positive_prediction_rate": 19.33,
+          "confusion_matrix": {
+            "tn": 384,
+            "fp": 174,
+            "fn": 359,
+            "tp": 4
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 8,
+          "accuracy": 38.33,
+          "balanced_accuracy": 31.87,
+          "precision": 2.33,
+          "recall": 1.38,
+          "specificity": 62.37,
+          "f1": 1.73,
+          "roc_auc": 0.0647,
+          "positive_prediction_rate": 23.34,
+          "confusion_matrix": {
+            "tn": 348,
+            "fp": 210,
+            "fn": 358,
+            "tp": 5
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 9,
+          "accuracy": 31.81,
+          "balanced_accuracy": 26.59,
+          "precision": 2.51,
+          "recall": 1.93,
+          "specificity": 51.25,
+          "f1": 2.18,
+          "roc_auc": 0.0752,
+          "positive_prediction_rate": 30.29,
+          "confusion_matrix": {
+            "tn": 286,
+            "fp": 272,
+            "fn": 356,
+            "tp": 7
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 10,
+          "accuracy": 27.58,
+          "balanced_accuracy": 23.53,
+          "precision": 4.76,
+          "recall": 4.41,
+          "specificity": 42.65,
+          "f1": 4.58,
+          "roc_auc": 0.1096,
+          "positive_prediction_rate": 36.48,
+          "confusion_matrix": {
+            "tn": 238,
+            "fp": 320,
+            "fn": 347,
+            "tp": 16
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 11,
+          "accuracy": 26.17,
+          "balanced_accuracy": 22.37,
+          "precision": 4.58,
+          "recall": 4.41,
+          "specificity": 40.32,
+          "f1": 4.49,
+          "roc_auc": 0.1466,
+          "positive_prediction_rate": 37.89,
+          "confusion_matrix": {
+            "tn": 225,
+            "fp": 333,
+            "fn": 347,
+            "tp": 16
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 12,
+          "accuracy": 24.65,
+          "balanced_accuracy": 21.26,
+          "precision": 5.15,
+          "recall": 5.23,
+          "specificity": 37.28,
+          "f1": 5.19,
+          "roc_auc": 0.1683,
+          "positive_prediction_rate": 40.07,
+          "confusion_matrix": {
+            "tn": 208,
+            "fp": 350,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 13,
+          "accuracy": 24.43,
+          "balanced_accuracy": 21.08,
+          "precision": 5.12,
+          "recall": 5.23,
+          "specificity": 36.92,
+          "f1": 5.18,
+          "roc_auc": 0.1814,
+          "positive_prediction_rate": 40.28,
+          "confusion_matrix": {
+            "tn": 206,
+            "fp": 352,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 14,
+          "accuracy": 24.1,
+          "balanced_accuracy": 20.76,
+          "precision": 4.84,
+          "recall": 4.96,
+          "specificity": 36.56,
+          "f1": 4.9,
+          "roc_auc": 0.2003,
+          "positive_prediction_rate": 40.39,
+          "confusion_matrix": {
+            "tn": 204,
+            "fp": 354,
+            "fn": 345,
+            "tp": 18
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 15,
+          "accuracy": 23.78,
+          "balanced_accuracy": 20.54,
+          "precision": 5.04,
+          "recall": 5.23,
+          "specificity": 35.84,
+          "f1": 5.14,
+          "roc_auc": 0.203,
+          "positive_prediction_rate": 40.93,
+          "confusion_matrix": {
+            "tn": 200,
+            "fp": 358,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 16,
+          "accuracy": 24.1,
+          "balanced_accuracy": 20.81,
+          "precision": 5.08,
+          "recall": 5.23,
+          "specificity": 36.38,
+          "f1": 5.16,
+          "roc_auc": 0.2055,
+          "positive_prediction_rate": 40.61,
+          "confusion_matrix": {
+            "tn": 203,
+            "fp": 355,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 17,
+          "accuracy": 23.89,
+          "balanced_accuracy": 20.63,
+          "precision": 5.05,
+          "recall": 5.23,
+          "specificity": 36.02,
+          "f1": 5.14,
+          "roc_auc": 0.2054,
+          "positive_prediction_rate": 40.83,
+          "confusion_matrix": {
+            "tn": 201,
+            "fp": 357,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 18,
+          "accuracy": 23.89,
+          "balanced_accuracy": 20.63,
+          "precision": 5.05,
+          "recall": 5.23,
+          "specificity": 36.02,
+          "f1": 5.14,
+          "roc_auc": 0.2046,
+          "positive_prediction_rate": 40.83,
+          "confusion_matrix": {
+            "tn": 201,
+            "fp": 357,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 19,
+          "accuracy": 23.78,
+          "balanced_accuracy": 20.54,
+          "precision": 5.04,
+          "recall": 5.23,
+          "specificity": 35.84,
+          "f1": 5.14,
+          "roc_auc": 0.2045,
+          "positive_prediction_rate": 40.93,
+          "confusion_matrix": {
+            "tn": 200,
+            "fp": 358,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        },
+        {
+          "round": 20,
+          "accuracy": 23.78,
+          "balanced_accuracy": 20.54,
+          "precision": 5.04,
+          "recall": 5.23,
+          "specificity": 35.84,
+          "f1": 5.14,
+          "roc_auc": 0.2054,
+          "positive_prediction_rate": 40.93,
+          "confusion_matrix": {
+            "tn": 200,
+            "fp": 358,
+            "fn": 344,
+            "tp": 19
+          },
+          "n_samples": 921
+        }
+      ],
+      "attack": {
+        "malicious_client": 4,
+        "gradient_factor": -25.0
+      },
+      "runtime_seconds": 0.035
+    },
+    {
+      "name": "secure_federated",
+      "description": "QKD认证加密 + 量子差分隐私 + MPO + 拜占庭共识 + 区块链",
+      "metrics": {
+        "round": 20,
+        "accuracy": 86.1,
+        "balanced_accuracy": 85.26,
+        "precision": 83.1,
+        "recall": 81.27,
+        "specificity": 89.25,
+        "f1": 82.17,
+        "roc_auc": 0.9165,
+        "positive_prediction_rate": 38.55,
+        "confusion_matrix": {
+          "tn": 498,
+          "fp": 60,
+          "fn": 68,
+          "tp": 295
+        },
+        "n_samples": 921,
+        "detected_malicious": [
+          4
+        ],
+        "consensus_reached": true,
+        "block_index": 20
+      },
+      "history": [
+        {
+          "round": 1,
+          "accuracy": 51.47,
+          "balanced_accuracy": 44.25,
+          "precision": 23.42,
+          "recall": 10.19,
+          "specificity": 78.32,
+          "f1": 14.2,
+          "roc_auc": 0.3418,
+          "positive_prediction_rate": 17.16,
+          "confusion_matrix": {
+            "tn": 437,
+            "fp": 121,
+            "fn": 326,
+            "tp": 37
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 1
+        },
+        {
+          "round": 2,
+          "accuracy": 52.66,
+          "balanced_accuracy": 46.25,
+          "precision": 30.69,
+          "recall": 15.98,
+          "specificity": 76.52,
+          "f1": 21.01,
+          "roc_auc": 0.408,
+          "positive_prediction_rate": 20.52,
+          "confusion_matrix": {
+            "tn": 427,
+            "fp": 131,
+            "fn": 305,
+            "tp": 58
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 2
+        },
+        {
+          "round": 3,
+          "accuracy": 54.4,
+          "balanced_accuracy": 48.89,
+          "precision": 37.22,
+          "recall": 22.87,
+          "specificity": 74.91,
+          "f1": 28.33,
+          "roc_auc": 0.4887,
+          "positive_prediction_rate": 24.21,
+          "confusion_matrix": {
+            "tn": 418,
+            "fp": 140,
+            "fn": 280,
+            "tp": 83
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 3
+        },
+        {
+          "round": 4,
+          "accuracy": 58.85,
+          "balanced_accuracy": 54.73,
+          "precision": 47.06,
+          "recall": 35.26,
+          "specificity": 74.19,
+          "f1": 40.31,
+          "roc_auc": 0.5671,
+          "positive_prediction_rate": 29.53,
+          "confusion_matrix": {
+            "tn": 414,
+            "fp": 144,
+            "fn": 235,
+            "tp": 128
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 4
+        },
+        {
+          "round": 5,
+          "accuracy": 62.43,
+          "balanced_accuracy": 59.18,
+          "precision": 52.82,
+          "recall": 43.8,
+          "specificity": 74.55,
+          "f1": 47.89,
+          "roc_auc": 0.6384,
+          "positive_prediction_rate": 32.68,
+          "confusion_matrix": {
+            "tn": 416,
+            "fp": 142,
+            "fn": 204,
+            "tp": 159
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 5
+        },
+        {
+          "round": 6,
+          "accuracy": 66.23,
+          "balanced_accuracy": 63.9,
+          "precision": 57.83,
+          "recall": 52.89,
+          "specificity": 74.91,
+          "f1": 55.25,
+          "roc_auc": 0.7043,
+          "positive_prediction_rate": 36.05,
+          "confusion_matrix": {
+            "tn": 418,
+            "fp": 140,
+            "fn": 171,
+            "tp": 192
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 6
+        },
+        {
+          "round": 7,
+          "accuracy": 69.06,
+          "balanced_accuracy": 67.29,
+          "precision": 61.14,
+          "recall": 58.95,
+          "specificity": 75.63,
+          "f1": 60.03,
+          "roc_auc": 0.7528,
+          "positive_prediction_rate": 38.0,
+          "confusion_matrix": {
+            "tn": 422,
+            "fp": 136,
+            "fn": 149,
+            "tp": 214
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 7
+        },
+        {
+          "round": 8,
+          "accuracy": 74.05,
+          "balanced_accuracy": 72.42,
+          "precision": 67.92,
+          "recall": 64.74,
+          "specificity": 80.11,
+          "f1": 66.29,
+          "roc_auc": 0.7922,
+          "positive_prediction_rate": 37.57,
+          "confusion_matrix": {
+            "tn": 447,
+            "fp": 111,
+            "fn": 128,
+            "tp": 235
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 8
+        },
+        {
+          "round": 9,
+          "accuracy": 75.46,
+          "balanced_accuracy": 73.97,
+          "precision": 69.63,
+          "recall": 66.94,
+          "specificity": 81.0,
+          "f1": 68.26,
+          "roc_auc": 0.82,
+          "positive_prediction_rate": 37.89,
+          "confusion_matrix": {
+            "tn": 452,
+            "fp": 106,
+            "fn": 120,
+            "tp": 243
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 9
+        },
+        {
+          "round": 10,
+          "accuracy": 77.96,
+          "balanced_accuracy": 76.56,
+          "precision": 72.99,
+          "recall": 69.97,
+          "specificity": 83.15,
+          "f1": 71.45,
+          "roc_auc": 0.8426,
+          "positive_prediction_rate": 37.79,
+          "confusion_matrix": {
+            "tn": 464,
+            "fp": 94,
+            "fn": 109,
+            "tp": 254
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 10
+        },
+        {
+          "round": 11,
+          "accuracy": 79.15,
+          "balanced_accuracy": 77.93,
+          "precision": 74.22,
+          "recall": 72.18,
+          "specificity": 83.69,
+          "f1": 73.18,
+          "roc_auc": 0.8598,
+          "positive_prediction_rate": 38.33,
+          "confusion_matrix": {
+            "tn": 467,
+            "fp": 91,
+            "fn": 101,
+            "tp": 262
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 11
+        },
+        {
+          "round": 12,
+          "accuracy": 80.46,
+          "balanced_accuracy": 79.35,
+          "precision": 75.77,
+          "recall": 74.1,
+          "specificity": 84.59,
+          "f1": 74.93,
+          "roc_auc": 0.8724,
+          "positive_prediction_rate": 38.55,
+          "confusion_matrix": {
+            "tn": 472,
+            "fp": 86,
+            "fn": 94,
+            "tp": 269
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 12
+        },
+        {
+          "round": 13,
+          "accuracy": 81.87,
+          "balanced_accuracy": 80.85,
+          "precision": 77.53,
+          "recall": 76.03,
+          "specificity": 85.66,
+          "f1": 76.77,
+          "roc_auc": 0.8822,
+          "positive_prediction_rate": 38.65,
+          "confusion_matrix": {
+            "tn": 478,
+            "fp": 80,
+            "fn": 87,
+            "tp": 276
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 13
+        },
+        {
+          "round": 14,
+          "accuracy": 82.19,
+          "balanced_accuracy": 81.26,
+          "precision": 77.72,
+          "recall": 76.86,
+          "specificity": 85.66,
+          "f1": 77.29,
+          "roc_auc": 0.8902,
+          "positive_prediction_rate": 38.98,
+          "confusion_matrix": {
+            "tn": 478,
+            "fp": 80,
+            "fn": 84,
+            "tp": 279
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 14
+        },
+        {
+          "round": 15,
+          "accuracy": 82.95,
+          "balanced_accuracy": 82.08,
+          "precision": 78.61,
+          "recall": 77.96,
+          "specificity": 86.2,
+          "f1": 78.28,
+          "roc_auc": 0.8959,
+          "positive_prediction_rate": 39.09,
+          "confusion_matrix": {
+            "tn": 481,
+            "fp": 77,
+            "fn": 80,
+            "tp": 283
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 15
+        },
+        {
+          "round": 16,
+          "accuracy": 83.71,
+          "balanced_accuracy": 82.9,
+          "precision": 79.5,
+          "recall": 79.06,
+          "specificity": 86.74,
+          "f1": 79.28,
+          "roc_auc": 0.9015,
+          "positive_prediction_rate": 39.2,
+          "confusion_matrix": {
+            "tn": 484,
+            "fp": 74,
+            "fn": 76,
+            "tp": 287
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 16
+        },
+        {
+          "round": 17,
+          "accuracy": 84.26,
+          "balanced_accuracy": 83.45,
+          "precision": 80.28,
+          "recall": 79.61,
+          "specificity": 87.28,
+          "f1": 79.94,
+          "roc_auc": 0.9057,
+          "positive_prediction_rate": 39.09,
+          "confusion_matrix": {
+            "tn": 487,
+            "fp": 71,
+            "fn": 74,
+            "tp": 289
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 17
+        },
+        {
+          "round": 18,
+          "accuracy": 84.8,
+          "balanced_accuracy": 83.94,
+          "precision": 81.23,
+          "recall": 79.89,
+          "specificity": 87.99,
+          "f1": 80.56,
+          "roc_auc": 0.9099,
+          "positive_prediction_rate": 38.76,
+          "confusion_matrix": {
+            "tn": 491,
+            "fp": 67,
+            "fn": 73,
+            "tp": 290
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 18
+        },
+        {
+          "round": 19,
+          "accuracy": 85.34,
+          "balanced_accuracy": 84.49,
+          "precision": 82.02,
+          "recall": 80.44,
+          "specificity": 88.53,
+          "f1": 81.22,
+          "roc_auc": 0.9137,
+          "positive_prediction_rate": 38.65,
+          "confusion_matrix": {
+            "tn": 494,
+            "fp": 64,
+            "fn": 71,
+            "tp": 292
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 19
+        },
+        {
+          "round": 20,
+          "accuracy": 86.1,
+          "balanced_accuracy": 85.26,
+          "precision": 83.1,
+          "recall": 81.27,
+          "specificity": 89.25,
+          "f1": 82.17,
+          "roc_auc": 0.9165,
+          "positive_prediction_rate": 38.55,
+          "confusion_matrix": {
+            "tn": 498,
+            "fp": 60,
+            "fn": 68,
+            "tp": 295
+          },
+          "n_samples": 921,
+          "detected_malicious": [
+            4
+          ],
+          "consensus_reached": true,
+          "block_index": 20
+        }
+      ],
+      "security": {
+        "implementation_scope": "local software simulation; not quantum hardware",
+        "qkd_channels": [
+          {
+            "hospital_id": 0,
+            "status": "success",
+            "qber_pct": 0.0,
+            "sifted_key_length": 1038,
+            "final_key_bits": 256
+          },
+          {
+            "hospital_id": 1,
+            "status": "success",
+            "qber_pct": 0.0,
+            "sifted_key_length": 1033,
+            "final_key_bits": 256
+          },
+          {
+            "hospital_id": 2,
+            "status": "success",
+            "qber_pct": 0.0,
+            "sifted_key_length": 1025,
+            "final_key_bits": 256
+          },
+          {
+            "hospital_id": 3,
+            "status": "success",
+            "qber_pct": 0.0,
+            "sifted_key_length": 1015,
+            "final_key_bits": 256
+          },
+          {
+            "hospital_id": 4,
+            "status": "success",
+            "qber_pct": 0.0,
+            "sifted_key_length": 1024,
+            "final_key_bits": 256
+          }
+        ],
+        "eavesdropping_test": {
+          "status": "failed",
+          "qber_pct": 21.29,
+          "eavesdropping_detected": true,
+          "key_discarded": true
+        },
+        "ciphertext_tampering_test": {
+          "tampering_rejected": true,
+          "receiver_status": "failed",
+          "reason": "authentication_failed"
+        },
+        "authenticated_transmissions": 100,
+        "rejected_transmissions": 0,
+        "qdp": {
+          "local_epsilon_per_round": 0.5,
+          "delta": 1e-05,
+          "per_hospital_reports": [
+            {
+              "total_epsilon": 10.000000001,
+              "delta": 1e-05,
+              "budget_used": 10.0,
+              "budget_remaining": 0.0,
+              "privacy_level": "隐私预算耗尽",
+              "noise_rounds": 20,
+              "channel_ratio": 0.65
+            },
+            {
+              "total_epsilon": 10.000000001,
+              "delta": 1e-05,
+              "budget_used": 10.0,
+              "budget_remaining": 0.0,
+              "privacy_level": "隐私预算耗尽",
+              "noise_rounds": 20,
+              "channel_ratio": 0.65
+            },
+            {
+              "total_epsilon": 10.000000001,
+              "delta": 1e-05,
+              "budget_used": 10.0,
+              "budget_remaining": 0.0,
+              "privacy_level": "隐私预算耗尽",
+              "noise_rounds": 20,
+              "channel_ratio": 0.65
+            },
+            {
+              "total_epsilon": 10.000000001,
+              "delta": 1e-05,
+              "budget_used": 10.0,
+              "budget_remaining": 0.0,
+              "privacy_level": "隐私预算耗尽",
+              "noise_rounds": 20,
+              "channel_ratio": 0.65
+            },
+            {
+              "total_epsilon": 10.000000001,
+              "delta": 1e-05,
+              "budget_used": 10.0,
+              "budget_remaining": 0.0,
+              "privacy_level": "隐私预算耗尽",
+              "noise_rounds": 20,
+              "channel_ratio": 0.65
+            }
+          ]
+        },
+        "mpo": {
+          "bond_dim": 16,
+          "mpo_transmission_rate_pct": 100.0,
+          "average_payload_saving_pct": 39.27,
+          "average_wire_saving_pct": 39.19,
+          "max_reconstruction_mse": 0.12736108653913011
+        },
+        "byzantine": {
+          "malicious_hospital": 4,
+          "max_malicious_tolerated": 1,
+          "rounds_detected": 20,
+          "rounds_total": 20
+        },
+        "blockchain": {
+          "length": 21,
+          "is_valid": true,
+          "validation_msg": "区块链完整有效",
+          "difficulty": 2,
+          "total_transactions": 100,
+          "last_block_hash": "00a92479437ce9b267a64d45e57be27b82e905012ca51e904419e1cd1658a6e8",
+          "validation": "区块链完整有效",
+          "all_rounds_recorded": true,
+          "valid": true
+        }
+      },
+      "runtime_seconds": 0.704
+    }
+  ]
+}

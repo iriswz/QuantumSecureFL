@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="324pt" viewBox="0 0 576 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-11T12:54:34.647689</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 576 324 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 73.579268 109.512 
+L 141.758197 109.512 
+Q 145.890254 109.512 145.890254 104.328 
+L 145.890254 64.152 
+Q 145.890254 58.968 141.758197 58.968 
+L 73.579268 58.968 
+Q 69.447211 58.968 69.447211 64.152 
+L 69.447211 104.328 
+Q 69.447211 109.512 73.579268 109.512 
+z
+" clip-path="url(#p300122157c)" style="fill: #eaf2fa; stroke: #88b7df; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 171.715606 109.512 
+L 239.894535 109.512 
+Q 244.026592 109.512 244.026592 104.328 
+L 244.026592 64.152 
+Q 244.026592 58.968 239.894535 58.968 
+L 171.715606 58.968 
+Q 167.583549 58.968 167.583549 64.152 
+L 167.583549 104.328 
+Q 167.583549 109.512 171.715606 109.512 
+z
+" clip-path="url(#p300122157c)" style="fill: #eaf2fa; stroke: #88b7df; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 269.851944 109.512 
+L 338.030873 109.512 
+Q 342.16293 109.512 342.16293 104.328 
+L 342.16293 64.152 
+Q 342.16293 58.968 338.030873 58.968 
+L 269.851944 58.968 
+Q 265.719887 58.968 265.719887 64.152 
+L 265.719887 104.328 
+Q 265.719887 109.512 269.851944 109.512 
+z
+" clip-path="url(#p300122157c)" style="fill: #eaf2fa; stroke: #88b7df; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 367.988282 109.512 
+L 436.167211 109.512 
+Q 440.299268 109.512 440.299268 104.328 
+L 440.299268 64.152 
+Q 440.299268 58.968 436.167211 58.968 
+L 367.988282 58.968 
+Q 363.856225 58.968 363.856225 64.152 
+L 363.856225 104.328 
+Q 363.856225 109.512 367.988282 109.512 
+z
+" clip-path="url(#p300122157c)" style="fill: #eaf2fa; stroke: #88b7df; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 466.12462 109.512 
+L 534.303549 109.512 
+Q 538.435606 109.512 538.435606 104.328 
+L 538.435606 64.152 
+Q 538.435606 58.968 534.303549 58.968 
+L 466.12462 58.968 
+Q 461.992563 58.968 461.992563 64.152 
+L 461.992563 104.328 
+Q 461.992563 109.512 466.12462 109.512 
+z
+" clip-path="url(#p300122157c)" style="fill: #eaf2fa; stroke: #88b7df; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 73.579268 226.152 
+L 141.758197 226.152 
+Q 145.890254 226.152 145.890254 220.968 
+L 145.890254 180.792 
+Q 145.890254 175.608 141.758197 175.608 
+L 73.579268 175.608 
+Q 69.447211 175.608 69.447211 180.792 
+L 69.447211 220.968 
+Q 69.447211 226.152 73.579268 226.152 
+z
+" clip-path="url(#p300122157c)" style="fill: #f3f6f9; stroke: #aab2bd; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 171.715606 226.152 
+L 239.894535 226.152 
+Q 244.026592 226.152 244.026592 220.968 
+L 244.026592 180.792 
+Q 244.026592 175.608 239.894535 175.608 
+L 171.715606 175.608 
+Q 167.583549 175.608 167.583549 180.792 
+L 167.583549 220.968 
+Q 167.583549 226.152 171.715606 226.152 
+z
+" clip-path="url(#p300122157c)" style="fill: #f3f6f9; stroke: #aab2bd; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 269.851944 226.152 
+L 338.030873 226.152 
+Q 342.16293 226.152 342.16293 220.968 
+L 342.16293 180.792 
+Q 342.16293 175.608 338.030873 175.608 
+L 269.851944 175.608 
+Q 265.719887 175.608 265.719887 180.792 
+L 265.719887 220.968 
+Q 265.719887 226.152 269.851944 226.152 
+z
+" clip-path="url(#p300122157c)" style="fill: #fff0e2; stroke: #d9792b; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 367.988282 226.152 
+L 436.167211 226.152 
+Q 440.299268 226.152 440.299268 220.968 
+L 440.299268 180.792 
+Q 440.299268 175.608 436.167211 175.608 
+L 367.988282 175.608 
+Q 363.856225 175.608 363.856225 180.792 
+L 363.856225 220.968 
+Q 363.856225 226.152 367.988282 226.152 
+z
+" clip-path="url(#p300122157c)" style="fill: #f3f6f9; stroke: #aab2bd; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 466.12462 226.152 
+L 534.303549 226.152 
+Q 538.435606 226.152 538.435606 220.968 
+L 538.435606 180.792 
+Q 538.435606 175.608 534.303549 175.608 
+L 466.12462 175.608 
+Q 461.992563 175.608 461.992563 180.792 
+L 461.992563 220.968 
+Q 461.992563 226.152 466.12462 226.152 
+z
+" clip-path="url(#p300122157c)" style="fill: #f3f6f9; stroke: #aab2bd; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 343.712451 200.88 
+L 345.778479 200.88 
+" clip-path="url(#p300122157c)" style="fill: none; stroke: #d9792b; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 360.240676 200.88 
+L 362.306704 200.88 
+" clip-path="url(#p300122157c)" style="fill: none; stroke: #d9792b; stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start; fill: #272727" x="23.478085" y="88.934063" transform="rotate(-0 23.478085 88.934063)">篡改前</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: start; fill: #272727" x="23.478085" y="205.574063" transform="rotate(-0 23.478085 205.574063)">篡改后</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="107.668732" y="80.854781" transform="rotate(-0 107.668732 80.854781)">B1</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="107.668732" y="97.581719" transform="rotate(-0 107.668732 97.581719)">00af1acd01</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 149.441744 84.24 
+Q 156.739351 84.24 161.577284 84.24 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 155.177284 81.04 
+L 161.577284 84.24 
+L 155.177284 87.44 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="205.80507" y="80.854781" transform="rotate(-0 205.80507 80.854781)">B2</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="205.80507" y="97.581719" transform="rotate(-0 205.80507 97.581719)">00986882b0</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 247.578082 84.24 
+Q 254.875689 84.24 259.713622 84.24 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 253.313622 81.04 
+L 259.713622 84.24 
+L 253.313622 87.44 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="303.941408" y="80.854781" transform="rotate(-0 303.941408 80.854781)">B3</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="303.941408" y="97.581719" transform="rotate(-0 303.941408 97.581719)">00c796fcc2</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 345.71442 84.24 
+Q 353.012027 84.24 357.84996 84.24 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 351.44996 81.04 
+L 357.84996 84.24 
+L 351.44996 87.44 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="402.077746" y="80.854781" transform="rotate(-0 402.077746 80.854781)">B4</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="402.077746" y="97.581719" transform="rotate(-0 402.077746 97.581719)">0036237616</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 443.850758 84.24 
+Q 451.148365 84.24 455.986298 84.24 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 449.586298 81.04 
+L 455.986298 84.24 
+L 449.586298 87.44 
+" style="fill: none; stroke: #2a8c82; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="500.214085" y="80.854781" transform="rotate(-0 500.214085 80.854781)">B5</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="500.214085" y="97.581719" transform="rotate(-0 500.214085 97.581719)">00a5508b62</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="107.668732" y="197.494781" transform="rotate(-0 107.668732 197.494781)">B1</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="107.668732" y="214.221719" transform="rotate(-0 107.668732 214.221719)">00af1acd01</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 149.441744 200.88 
+Q 156.739351 200.88 161.800891 200.88 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 155.400891 197.68 
+L 161.800891 200.88 
+L 155.400891 204.08 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="205.80507" y="197.494781" transform="rotate(-0 205.80507 197.494781)">B2</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="205.80507" y="214.221719" transform="rotate(-0 205.80507 214.221719)">00986882b0</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 247.578082 200.88 
+Q 254.875689 200.88 259.937229 200.88 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 253.537229 197.68 
+L 259.937229 200.88 
+L 253.537229 204.08 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="303.941408" y="197.537281" transform="rotate(-0 303.941408 197.537281)">B3 已篡改</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="303.941408" y="214.221719" transform="rotate(-0 303.941408 214.221719)">008aed4a59</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #d9792b" x="353.009577" y="207.595313" transform="rotate(-0 353.009577 207.595313)">×</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="402.077746" y="197.494781" transform="rotate(-0 402.077746 197.494781)">B4</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="402.077746" y="214.221719" transform="rotate(-0 402.077746 214.221719)">0036237616</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 443.850758 200.88 
+Q 451.148365 200.88 456.209905 200.88 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 449.809905 197.68 
+L 456.209905 200.88 
+L 449.809905 204.08 
+" style="fill: none; stroke: #aab2bd; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #272727" x="500.214085" y="197.494781" transform="rotate(-0 500.214085 197.494781)">B5</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: middle; fill: #6b7280" x="500.214085" y="214.221719" transform="rotate(-0 500.214085 214.221719)">00a5508b62</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 14px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #d9792b" x="353.009577" y="259.66125" transform="rotate(-0 353.009577 259.66125)">B4.previous_hash = 00c796fcc2…</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial Unicode MS', 'Arial', 'DejaVu Sans', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #d9792b" x="353.009577" y="285.944375" transform="rotate(-0 353.009577 285.944375)">B3.current_hash = 008aed4a59…  →  不一致，检出链接断裂</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p300122157c">
+   <rect x="17.28" y="12.96" width="550.08" height="291.6"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,106 @@
+{
+  "scene": "bankruptcy",
+  "dataset": "Taiwanese Bankruptcy Prediction",
+  "seeds": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "protocol": {
+    "rounds": 20,
+    "batch_size_per_client": 256,
+    "learning_rate": 0.08,
+    "local_epsilon_per_round": 0.5,
+    "mpo_bond_dim": 12,
+    "malicious_client": 4,
+    "attack_gradient_factor": -25.0,
+    "seed": 2030
+  },
+  "per_seed": [
+    {
+      "seed": 2026,
+      "clean_plain_balanced_accuracy": 84.73,
+      "attacked_plain_balanced_accuracy": 28.3,
+      "secure_balanced_accuracy": 81.02,
+      "secure_gain_over_attacked_points": 52.72,
+      "secure_gap_from_clean_plain_points": -3.71,
+      "qdp_gradient_reconstruction_nrmse": 1.11717962,
+      "mpo_payload_saving_pct": 38.81,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2027,
+      "clean_plain_balanced_accuracy": 79.66,
+      "attacked_plain_balanced_accuracy": 25.95,
+      "secure_balanced_accuracy": 79.81,
+      "secure_gain_over_attacked_points": 53.86,
+      "secure_gap_from_clean_plain_points": 0.15,
+      "qdp_gradient_reconstruction_nrmse": 0.82057538,
+      "mpo_payload_saving_pct": 38.81,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2028,
+      "clean_plain_balanced_accuracy": 82.58,
+      "attacked_plain_balanced_accuracy": 26.78,
+      "secure_balanced_accuracy": 79.43,
+      "secure_gain_over_attacked_points": 52.65,
+      "secure_gap_from_clean_plain_points": -3.15,
+      "qdp_gradient_reconstruction_nrmse": 1.23766906,
+      "mpo_payload_saving_pct": 38.81,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2029,
+      "clean_plain_balanced_accuracy": 85.57,
+      "attacked_plain_balanced_accuracy": 26.4,
+      "secure_balanced_accuracy": 81.82,
+      "secure_gain_over_attacked_points": 55.42,
+      "secure_gap_from_clean_plain_points": -3.75,
+      "qdp_gradient_reconstruction_nrmse": 1.2799358,
+      "mpo_payload_saving_pct": 38.81,
+      "malicious_round_detection_rate_pct": 100.0
+    },
+    {
+      "seed": 2030,
+      "clean_plain_balanced_accuracy": 85.95,
+      "attacked_plain_balanced_accuracy": 27.5,
+      "secure_balanced_accuracy": 84.81,
+      "secure_gain_over_attacked_points": 57.31,
+      "secure_gap_from_clean_plain_points": -1.14,
+      "qdp_gradient_reconstruction_nrmse": 0.56876481,
+      "mpo_payload_saving_pct": 38.81,
+      "malicious_round_detection_rate_pct": 100.0
+    }
+  ],
+  "aggregate_mean": {
+    "clean_plain_balanced_accuracy": 83.698,
+    "attacked_plain_balanced_accuracy": 26.986,
+    "secure_balanced_accuracy": 81.378,
+    "secure_gain_over_attacked_points": 54.392,
+    "secure_gap_from_clean_plain_points": -2.32,
+    "qdp_gradient_reconstruction_nrmse": 1.005,
+    "mpo_payload_saving_pct": 38.81,
+    "malicious_round_detection_rate_pct": 100.0
+  },
+  "aggregate_sample_std": {
+    "clean_plain_balanced_accuracy": 2.608,
+    "attacked_plain_balanced_accuracy": 0.929,
+    "secure_balanced_accuracy": 2.142,
+    "secure_gain_over_attacked_points": 1.98,
+    "secure_gap_from_clean_plain_points": 1.744,
+    "qdp_gradient_reconstruction_nrmse": 0.303,
+    "mpo_payload_saving_pct": 0.0,
+    "malicious_round_detection_rate_pct": 0.0
+  },
+  "all_seeds": {
+    "eavesdropping_detected": true,
+    "ciphertext_tampering_rejected": true,
+    "malicious_client_detected_every_round": true,
+    "blockchain_valid": true,
+    "all_rounds_recorded": true
+  },
+  "scope_warning": "Five organizations and all quantum-related components are software simulations; the gradient inversion probe is empirical, not a formal DP audit."
+}
