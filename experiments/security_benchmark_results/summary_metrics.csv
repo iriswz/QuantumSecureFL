@@ -1,0 +1,19 @@
+module,metric,value
+QKD,Eve detection rate (%),100.0
+QKD,Normal error rate (%),0.0
+QKD,Eavesdropping error rate (%),20.7913
+QDP,epsilon=1 attack success rate (%),0.0
+QDP,epsilon=1 average MSE,0.2588
+MPO,Adaptive communication saving (%),92.32
+MPO,Adaptive reconstruction error,0.01876
+FL,5-seed baseline mean accuracy (%),90.13
+FL,5-seed baseline accuracy std (%),1.63
+FL,5-seed proposed mean accuracy (%),91.53
+FL,5-seed proposed accuracy std (%),0.98
+FL,Proposed communication saving (%),23.54
+FL-CV,5-fold mean accuracy (%),90.268
+FL-CV,5-fold std accuracy (%),1.9266
+FL-CV,5-fold min accuracy (%),88.0
+FL-CV,5-fold max accuracy (%),92.67
+Poisoning,Median reduction vs FedAvg (%),94.58
+Poisoning,Krum reduction vs FedAvg (%),94.96

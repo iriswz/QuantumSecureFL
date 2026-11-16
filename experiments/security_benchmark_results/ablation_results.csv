@@ -1,0 +1,6 @@
+variant,comparison_type,enabled_modules,aggregation,final_accuracy_pct,accuracy_delta_vs_baseline_pct,final_loss,avg_communication_saving_pct,avg_reconstruction_error,privacy_budget_remaining,learning_rate,qdp_clip_norm,mpo_max_reconstruction_error,compression_error_feedback,n_runs
+Baseline FedAvg,controlled_ablation,无,fedavg,87.0,0.0,0.364495,0.0,0.0,,0.5,,,False,1
++ MPO,controlled_ablation,MPO压缩,fedavg,74.67,-12.33,0.643348,71.28,0.0004477,,0.5,,0.001,False,1
++ QDP,controlled_ablation,量子差分隐私,fedavg,88.67,1.67,0.369277,0.0,0.0,132.6196,0.5,0.6,,False,1
+QDP + MPO,controlled_ablation,QDP + MPO,fedavg,87.0,0.0,0.43096,24.74,0.00035377,132.6196,0.5,0.6,0.001,False,1
+Ours,validation_selected_method,QDP + MPO + 压缩误差反馈,fedavg,89.33,2.33,0.28709,25.57,0.0005942,132.6196,0.7,1.0,0.0015,True,1
